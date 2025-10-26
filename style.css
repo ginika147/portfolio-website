@@ -1,29 +1,41 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
-  background: #f4f4f4;
-  color: #333;
+  background: #eaeaea;
+  color: #2e2e2e;
 }
 
 header {
-  background: #007acc;
+  background: #0066aa;
   color: white;
-  padding: 2rem;
+  padding: 1.8rem;
   text-align: center;
 }
 
 section {
   background: white;
-  margin: 1rem;
+  margin: 1.2rem;
   padding: 1.5rem;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+}
+
+section:hover {
+  transform: scale(1.01);
+  transition: transform 0.3s ease-in-out;
 }
 
 h2 {
-  color: #007acc;
+  color: #0066aa;
 }
 
 a {
-  color: #007acc;
+  color: #0066aa;
+}
+
+.main-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem;
+  border-left: 5px solid #0066aa;
 }
