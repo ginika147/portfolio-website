@@ -1,86 +1,70 @@
-/* Reset & Base styles */
-body, h1, h2, h3, p, ul {
+* {
   margin: 0;
   padding: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   box-sizing: border-box;
 }
 
 body {
-  background-color: #f9f9f9;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
   color: #333;
   line-height: 1.6;
-  padding: 30px;
+  padding: 20px;
 }
 
-/* Header styles */
-h1 {
+header {
   text-align: center;
-  color: #0074d9;
-  font-size: 2.5em;
-  margin-bottom: 10px;
+  background-color: #0a66c2;
+  color: white;
+  padding: 40px 20px;
+  border-radius: 8px;
 }
 
-.subtitle {
-  text-align: center;
-  color: #444;
-  font-size: 1.2em;
-  margin-bottom: 30px;
-}
-
-/* Section box styles */
-section {
-  background-color: #fff;
-  border-left: 5px solid #0074d9;
-  padding: 20px 25px;
-  margin-bottom: 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-}
-
-section h2 {
-  color: #0074d9;
-  margin-bottom: 10px;
-  font-size: 1.5em;
-}
-
-/* Links */
-a {
-  color: #0074d9;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* Lists */
-ul {
-  margin-left: 20px;
-}
-
-ul li {
-  margin-bottom: 8px;
-}
-
-/* Resume download */
-.resume-link {
-  font-weight: bold;
+header a {
   display: inline-block;
-  margin-top: 5px;
+  margin-top: 10px;
+  color: white;
+  background-color: #004182;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
 }
 
-/* Responsive design */
-@media screen and (max-width: 600px) {
-  body {
-    padding: 15px;
-  }
+header a:hover {
+  background-color: #003061;
+}
 
-  h1 {
-    font-size: 2em;
-  }
+section {
+  margin-top: 30px;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+}
 
-  section {
-    padding: 15px 20px;
-  }
+h2 {
+  margin-bottom: 10px;
+  color: #0a66c2;
+}
+
+.skills-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 10px;
+  padding-left: 0;
+}
+
+.skills-list li {
+  background-color: #e1e9f0;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: #555;
 }
