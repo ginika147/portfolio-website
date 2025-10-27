@@ -76,3 +76,19 @@ footer {
   font-size: 0.95rem;
   color: #444;
 }
+
+/* Resume button */
+.resume-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007acc;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.resume-button:hover {
+  background-color: #005f99;
+}
