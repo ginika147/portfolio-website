@@ -1,41 +1,86 @@
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+/* Reset & Base styles */
+body, h1, h2, h3, p, ul {
   margin: 0;
-  background: #eaeaea;
-  color: #2e2e2e;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
 }
 
-header {
-  background: #0066aa;
-  color: white;
-  padding: 1.8rem;
+body {
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+  padding: 30px;
+}
+
+/* Header styles */
+h1 {
   text-align: center;
+  color: #0074d9;
+  font-size: 2.5em;
+  margin-bottom: 10px;
 }
 
+.subtitle {
+  text-align: center;
+  color: #444;
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+/* Section box styles */
 section {
-  background: white;
-  margin: 1.2rem;
-  padding: 1.5rem;
-  border-radius: 12px;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+  border-left: 5px solid #0074d9;
+  padding: 20px 25px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-section:hover {
-  transform: scale(1.01);
-  transition: transform 0.3s ease-in-out;
+section h2 {
+  color: #0074d9;
+  margin-bottom: 10px;
+  font-size: 1.5em;
 }
 
-h2 {
-  color: #0066aa;
-}
-
+/* Links */
 a {
-  color: #0066aa;
+  color: #0074d9;
+  text-decoration: none;
 }
 
-.main-container {
-  max-width: 900px;
-  margin: auto;
-  padding: 2rem;
-  border-left: 5px solid #0066aa;
+a:hover {
+  text-decoration: underline;
+}
+
+/* Lists */
+ul {
+  margin-left: 20px;
+}
+
+ul li {
+  margin-bottom: 8px;
+}
+
+/* Resume download */
+.resume-link {
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 5px;
+}
+
+/* Responsive design */
+@media screen and (max-width: 600px) {
+  body {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  section {
+    padding: 15px 20px;
+  }
 }
